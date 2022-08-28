@@ -1,4 +1,5 @@
 import Link from '../src/components/Link';
+import Footer from '../src/components/patterns/Footer';
 
 function Title({ children }) {
   return (
@@ -18,6 +19,7 @@ function HomePage() {
     <div>
       <Title>Home Page - Alura Cases</Title>
       <Link href='/faq'>FAQ</Link>
+      <Footer />
     </div>
   );
 }
