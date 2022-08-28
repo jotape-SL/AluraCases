@@ -1,5 +1,15 @@
 import Link from '../src/components/Link';
 
+function GlobalStyle() {
+  return (
+    <style global jsx>{`
+      body {
+        font-family: sans-serif;
+      }
+    `}</style>
+  );
+}
+
 function Title({ children }) {
   return (
     <>
@@ -7,7 +17,6 @@ function Title({ children }) {
       <style jsx>{`
         h1 {
           color: red;
-          font-family: sans-serif;
         }
       `}</style>
     </>
@@ -17,6 +26,7 @@ function Title({ children }) {
 function HomePage() {
   return (
     <div>
+      <GlobalStyle />
       <Title>Home Page - Alura Cases</Title>
       <Link href='/faq'>FAQ</Link>
     </div>
