@@ -1,5 +1,3 @@
-import Link from '../src/components/Link';
-
 // SSG - Static Site Genetation
 // SSR - Server Side Rendering
 // ISG - Incremental Side Generation
@@ -11,6 +9,8 @@ import Link from '../src/components/Link';
 // getStaticProps()
 // Em modo dev, sempre roda!
 // Roda SOMENTE em build time
+import Head from 'next/head';
+import Link from '../src/components/Link';
 
 export async function getStaticProps() {
   const FAQ_API_URL =
@@ -32,6 +32,9 @@ export async function getStaticProps() {
 function FAQPage({ faq }) {
   return (
     <div>
+      <Head>
+        <title>FAQ - Alura Cases Campanha</title>
+      </Head>
       <h1>FAQ</h1>
       <Link href='/'>Ir para o home</Link>
       <ul>
