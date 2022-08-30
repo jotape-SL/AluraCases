@@ -1,5 +1,16 @@
 import Link from '../src/components/Link';
-import { useEffect, useState } from 'react';
+
+// SSG - Static Site Genetation
+// SSR - Server Side Rendering
+// ISG - Incremental Side Generation
+
+//  getServerSideProps()
+// Em modo dev, sempre roda!
+// Roda a cada acesso que vc recebe
+
+// getStaticProps()
+// Em modo dev, sempre roda!
+// Roda SOMENTE em build time
 
 export async function getStaticProps() {
   const FAQ_API_URL =
