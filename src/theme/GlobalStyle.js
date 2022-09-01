@@ -30,6 +30,9 @@ export default function GlobalStyle() {
         display: block;
         vertical-align: middle;
       }
+      span svg {
+        width: 16px;
+      }
       .sr-only {
         position: absolute;
         width: 1px;
